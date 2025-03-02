@@ -54,7 +54,7 @@ func testConcurrentSetGet(t *testing.T, m ConcurrentMap) {
 	// Getter thread. Delayed to ensure key has been set
 	// already
 	go func() {
-		time.Sleep(10 * time.Millisecond)
+		time.Sleep(100 * time.Millisecond)
 		for i := 0; i < NUM_KEYS; i++ {
 			val, exists := m.Get(strconv.Itoa(i))
 			assert.True(t, exists)

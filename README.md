@@ -12,13 +12,13 @@ This repo started out as just a benchmark for various Go concurrent map implemen
 ### TODO
 
 #### Concurrent Map
-[ ] - Rerun benchamrk on Go 1.24
+- [ ] Upgrade libraries
 
 #### On Disk Set
-[ ] - Try skiplist on BadgerDB
-[ ] - Try bbolt
-[ ] - Try https://github.com/tidwall/buntdb
+- [ ] Try skiplist on BadgerDB
+- [ ] Try bbolt
+- [ ] Try https://github.com/tidwall/buntdb
 
 #### Serde
-[ ] - Try Protobuf
-[ ] - Try custom binary format
+- [ ] Try Protobuf
+- [ ] Try custom binary format

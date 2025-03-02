@@ -1,19 +1,17 @@
 package set
 
 import (
-	"io/ioutil"
 	"math/rand"
+	"os"
+	"path/filepath"
 	"testing"
 )
 
 var tmpDir string
 
 func init() {
-	dir, err := ioutil.TempDir("", "badger-test")
-	if err != nil {
-		panic(err)
-	}
-	tmpDir = dir
+	dir := os.TempDir()
+	tmpDir = filepath.Join(dir, "on-disk-set")
 }
 
 func getRand() uint64 {
@@ -51,8 +49,8 @@ func benchmark(b *testing.B, s Set) {
 	})
 }
 
-func BenchmarkMap(b *testing.B) {
-	benchmark(b, NewMap())
+func BenchmarkInMemoryMap(b *testing.B) {
+	benchmark(b, NewInMemoryMap())
 }
 
 func BenchmarkBadgerDB(b *testing.B) {

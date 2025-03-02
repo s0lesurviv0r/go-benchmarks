@@ -5,7 +5,7 @@ type InMemoryMap struct {
 }
 
 func NewInMemoryMap() Set {
-	return &Map{
+	return &InMemoryMap{
 		m: make(map[uint64]struct{}),
 	}
 }
