@@ -1,7 +1,7 @@
 ### Overview
 **In Progress**
 
-This is a benchmark for on disk sets. `InMemorySet` is used as a reference
+This is a benchmark for on disk sets. `InMemoryMap` is used as a reference
 
 ### Results
 Benchmarked with Go 1.24.0 on KDE Neon 24.04 with a 13th Gen Intel(R) Core(TM) i5-1340P
