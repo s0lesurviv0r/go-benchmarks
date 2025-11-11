@@ -11,9 +11,6 @@ This repo started out as just a benchmark for various Go concurrent map implemen
 
 ### TODO
 
-#### Concurrent Map
-- [ ] Upgrade libraries
-
 #### On Disk Set
 - [ ] Try skiplist on BadgerDB
 - [ ] Try bbolt
