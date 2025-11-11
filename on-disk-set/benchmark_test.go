@@ -64,3 +64,7 @@ func BenchmarkCuteDB(b *testing.B) {
 func BenchmarkBuntDB(b *testing.B) {
 	benchmark(b, NewBuntDB(tmpDir+"/buntdb.db"))
 }
+
+func BenchmarkSQLite3(b *testing.B) {
+	benchmark(b, NewSQLite3(tmpDir+"/sqlite3.db"))
+}

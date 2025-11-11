@@ -1,9 +1,14 @@
 ### Overview
-**In Progress**
-
 This is a benchmark for on disk sets. `InMemoryMap` is used as a reference
 
+Tests the following external libraries:
+* github.com/outcaste-io/badger/v3
+* github.com/tidwall/buntd
+* github.com/naqvijafar91/cuteDB
+* github.com/mattn/go-sqlite3
+
 ### Results
+
 ```
 goos: darwin
 goarch: arm64
