@@ -2,8 +2,9 @@ package set
 
 import (
 	"encoding/binary"
+	"errors"
 
-	"github.com/naqvijafar91/cuteDB"
+	cutedb "github.com/naqvijafar91/cuteDB"
 )
 
 // CuteDB uses a B-Tree on disk to back a set
@@ -38,8 +39,10 @@ func (s *CuteDB) Add(v uint64) error {
 }
 
 func (s *CuteDB) Delete(v uint64) error {
-	// TODO Implement
-	return nil
+	// CuteDB library does not support deletion operations
+	// The underlying B-tree implementation would need to be extended
+	// to support this functionality
+	return errors.ErrUnsupported
 }
 
 func (s *CuteDB) Exists(v uint64) (bool, error) {

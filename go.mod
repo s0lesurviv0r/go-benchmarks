@@ -33,8 +33,17 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/smartystreets/goconvey v1.8.1 // indirect
+	github.com/tidwall/btree v1.4.2 // indirect
+	github.com/tidwall/buntdb v1.3.2 // indirect
+	github.com/tidwall/gjson v1.14.3 // indirect
+	github.com/tidwall/grect v0.1.4 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tidwall/rhh v1.3.0 // indirect
+	github.com/tidwall/rtred v0.1.2 // indirect
+	github.com/tidwall/tinyqueue v0.1.1 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
+	go.etcd.io/bbolt v1.4.3 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.uber.org/atomic v1.11.0 // indirect
 	golang.org/x/net v0.47.0 // indirect

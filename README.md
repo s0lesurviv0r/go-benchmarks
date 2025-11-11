@@ -13,8 +13,6 @@ This repo started out as just a benchmark for various Go concurrent map implemen
 
 #### On Disk Set
 - [ ] Try skiplist on BadgerDB
-- [ ] Try bbolt
-- [ ] Try https://github.com/tidwall/buntdb
 
 #### Serde
 - [ ] Try Protobuf

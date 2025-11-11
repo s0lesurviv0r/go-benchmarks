@@ -60,3 +60,7 @@ func BenchmarkBadgerDB(b *testing.B) {
 func BenchmarkCuteDB(b *testing.B) {
 	benchmark(b, NewCuteDB(tmpDir+"/cutedb"))
 }
+
+func BenchmarkBuntDB(b *testing.B) {
+	benchmark(b, NewBuntDB(tmpDir+"/buntdb.db"))
+}
