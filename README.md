@@ -2,14 +2,9 @@
 
 ### Overview
 This repo started out as just a benchmark for various Go concurrent map implementations. Today this new repo aims to test various algorithms and data structures:
-* Concurrent maps (COMPLETE)
-* On disk sets (IN PROGRESS)
-* Serde (IN PROGRESS)
+* Concurrent maps
+* On disk sets
+* Serde
 
 ### Running
 `make bench-[map|set|serde]`
-
-### TODO
-
-#### Serde
-- [ ] Try custom binary format

@@ -1,6 +1,8 @@
 package serde
 
 import (
+	"bytes"
+	"encoding/gob"
 	"encoding/json"
 	"testing"
 
@@ -86,5 +88,49 @@ func BenchmarkProtobufUnmarshal(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		obj := &models.ProtoObject{}
 		_ = proto.Unmarshal(buf, obj)
+	}
+}
+
+func BenchmarkCustomBinaryMarshal(b *testing.B) {
+	obj := getTestObject()
+	for i := 0; i < b.N; i++ {
+		var buf bytes.Buffer
+		_, _ = obj.WriteTo(&buf)
+	}
+}
+
+func BenchmarkCustomBinaryUnmarshal(b *testing.B) {
+	obj := getTestObject()
+	var buf bytes.Buffer
+	_, _ = obj.WriteTo(&buf)
+	data := buf.Bytes()
+
+	for i := 0; i < b.N; i++ {
+		var obj models.Object
+		reader := bytes.NewReader(data)
+		_, _ = obj.ReadFrom(reader)
+	}
+}
+
+func BenchmarkGobMarshal(b *testing.B) {
+	obj := getTestObject()
+	for i := 0; i < b.N; i++ {
+		var buf bytes.Buffer
+		enc := gob.NewEncoder(&buf)
+		_ = enc.Encode(&obj)
+	}
+}
+
+func BenchmarkGobUnmarshal(b *testing.B) {
+	obj := getTestObject()
+	var buf bytes.Buffer
+	enc := gob.NewEncoder(&buf)
+	_ = enc.Encode(&obj)
+	data := buf.Bytes()
+
+	for i := 0; i < b.N; i++ {
+		var obj models.Object
+		dec := gob.NewDecoder(bytes.NewReader(data))
+		_ = dec.Decode(&obj)
 	}
 }
