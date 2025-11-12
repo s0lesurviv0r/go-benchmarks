@@ -1,5 +1,5 @@
 ### Overview
-This is a benchmark for on disk sets. `InMemoryMap` is used as a reference
+This is a benchmark for sets that are stored on disk. `InMemoryMap` is used as a reference
 
 Tests the following external libraries:
 * github.com/outcaste-io/badger/v3

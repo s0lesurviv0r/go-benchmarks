@@ -11,9 +11,6 @@ This repo started out as just a benchmark for various Go concurrent map implemen
 
 ### TODO
 
-#### On Disk Set
-- [ ] Try skiplist on BadgerDB
-
 #### Serde
 - [ ] Try Protobuf
 - [ ] Try custom binary format
