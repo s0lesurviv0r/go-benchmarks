@@ -13,5 +13,15 @@ bench-set:
 bench-serde:
 	go test --bench=. -benchmem ./serde
 
+deps:
+	@echo "Installing protoc-gen-go..."
+	@go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+	@echo "Checking for protoc installation..."
+	@which protoc > /dev/null || (echo "Error: protoc not found. Please install it via: brew install protobuf" && exit 1)
+	@echo "Generating protobuf Go files..."
+	@cd serde/models && protoc --go_out=. --go_opt=paths=source_relative object.proto
+	@echo "Done! Protobuf files generated."
+
 generate:
 	ffjson serde/models/object.go
+	cd serde/models && protoc --go_out=. --go_opt=paths=source_relative object.proto

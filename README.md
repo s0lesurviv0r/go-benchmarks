@@ -12,5 +12,4 @@ This repo started out as just a benchmark for various Go concurrent map implemen
 ### TODO
 
 #### Serde
-- [ ] Try Protobuf
 - [ ] Try custom binary format
