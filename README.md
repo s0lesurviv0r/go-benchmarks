@@ -7,4 +7,6 @@ This repo started out as just a benchmark for various Go concurrent map implemen
 * Serde
 
 ### Running
-`make bench-[map|set|serde]`
+Run functional tests: `make test`
+
+Run benchmarks: `make bench-[map|set|serde]`

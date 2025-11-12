@@ -34,7 +34,7 @@ func BenchmarkJsonUnmarshal(b *testing.B) {
 	buf, _ := json.Marshal(getTestObject())
 	var obj models.Object
 	for i := 0; i < b.N; i++ {
-		_ = ffjson.Unmarshal(buf, obj)
+		_ = json.Unmarshal(buf, &obj)
 	}
 }
 
@@ -48,7 +48,7 @@ func BenchmarkFfjsonUnmarshal(b *testing.B) {
 	buf, _ := ffjson.Marshal(getTestObject())
 	var obj models.Object
 	for i := 0; i < b.N; i++ {
-		_ = ffjson.Unmarshal(buf, obj)
+		_ = ffjson.Unmarshal(buf, &obj)
 	}
 }
 
@@ -59,10 +59,10 @@ func BenchmarkCborMarshal(b *testing.B) {
 }
 
 func BenchmarkCborUnmarshal(b *testing.B) {
-	buf, _ := ffjson.Marshal(getTestObject())
+	buf, _ := cbor.Marshal(getTestObject())
 	var obj models.Object
 	for i := 0; i < b.N; i++ {
-		_ = cbor.Unmarshal(buf, obj)
+		_ = cbor.Unmarshal(buf, &obj)
 	}
 }
 
