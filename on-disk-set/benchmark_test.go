@@ -143,6 +143,12 @@ func TestSQLite3(t *testing.T) {
 	test(t, func() Set { return NewSQLite3(tmpDir + "/sqlite3-test.db") })
 }
 
+func TestRocksDB(t *testing.T) {
+	// Clean up any existing test database
+	os.RemoveAll(tmpDir + "/rocksdb-test")
+	test(t, func() Set { return NewRocksDB(tmpDir + "/rocksdb-test") })
+}
+
 func preloadSet(s Set, size int) {
 	for i := 0; i < size; i++ {
 		s.Add(getRand())
@@ -186,4 +192,8 @@ func BenchmarkBuntDB(b *testing.B) {
 
 func BenchmarkSQLite3(b *testing.B) {
 	benchmark(b, NewSQLite3(tmpDir+"/sqlite3.db"))
+}
+
+func BenchmarkRocksDB(b *testing.B) {
+	benchmark(b, NewRocksDB(tmpDir+"/rocksdb"))
 }

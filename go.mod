@@ -9,12 +9,15 @@ require (
 	github.com/dustinxie/lockfree v0.0.0-20210712051436-ed0ed42fd0d6
 	github.com/fanliao/go-concurrentMap v0.0.0-20141114143905-7d2d7a5ea67b
 	github.com/fxamacker/cbor/v2 v2.4.0
-	github.com/naqvijafar91/cuteDB v0.0.0-20190313102613-df03f472839f
+	github.com/linxGnu/grocksdb v1.10.3
+	github.com/mattn/go-sqlite3 v1.14.32
 	github.com/orcaman/concurrent-map v1.0.0
 	github.com/outcaste-io/badger/v3 v3.2202.0
 	github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
+	github.com/tidwall/buntdb v1.3.2
 	github.com/tidwall/shardmap v0.0.0-20190927132224-c190691bd211
+	google.golang.org/protobuf v1.36.10
 )
 
 require (
@@ -29,13 +32,11 @@ require (
 	github.com/golang/snappy v1.0.0 // indirect
 	github.com/google/flatbuffers v25.9.23+incompatible // indirect
 	github.com/klauspost/compress v1.18.1 // indirect
-	github.com/mattn/go-sqlite3 v1.14.32 // indirect
 	github.com/outcaste-io/ristretto v0.2.3 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/smartystreets/goconvey v1.8.1 // indirect
 	github.com/tidwall/btree v1.4.2 // indirect
-	github.com/tidwall/buntdb v1.3.2 // indirect
 	github.com/tidwall/gjson v1.14.3 // indirect
 	github.com/tidwall/grect v0.1.4 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
@@ -44,11 +45,9 @@ require (
 	github.com/tidwall/rtred v0.1.2 // indirect
 	github.com/tidwall/tinyqueue v0.1.1 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
-	go.etcd.io/bbolt v1.4.3 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.uber.org/atomic v1.11.0 // indirect
 	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/sys v0.38.0 // indirect
-	google.golang.org/protobuf v1.36.10 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

@@ -3,8 +3,9 @@ This is a benchmark for sets that are stored on disk. `InMemoryMap` is used as a
 
 Tests the following external libraries:
 * github.com/outcaste-io/badger/v3
-* github.com/tidwall/buntd
+* github.com/tidwall/buntdb
 * github.com/mattn/go-sqlite3
+* github.com/linxGnu/grocksdb (RocksDB)
 
 ### Results
 ```
@@ -22,6 +23,9 @@ BenchmarkBadgerDB/Delete-14            	  216046	      5792 ns/op	    1428 B/op	
 BenchmarkBuntDB/Exists-14              	  983827	      1132 ns/op	      96 B/op	       3 allocs/op
 BenchmarkBuntDB/Add-14                 	  396726	      2804 ns/op	     720 B/op	       9 allocs/op
 BenchmarkBuntDB/Delete-14              	  873738	      1248 ns/op	     304 B/op	       7 allocs/op
+BenchmarkRocksDB/Exists-14             	 2334376	       516.9 ns/op	     136 B/op	       3 allocs/op
+BenchmarkRocksDB/Add-14                	  731456	      1856 ns/op	     136 B/op	       3 allocs/op
+BenchmarkRocksDB/Delete-14             	  555099	      2385 ns/op	     136 B/op	       3 allocs/op
 BenchmarkSQLite3/Exists-14             	  421768	      2900 ns/op	     536 B/op	      16 allocs/op
 BenchmarkSQLite3/Add-14                	   16352	     72994 ns/op	     286 B/op	      10 allocs/op
 BenchmarkSQLite3/Delete-14             	  384096	      3139 ns/op	     276 B/op	      10 allocs/op
