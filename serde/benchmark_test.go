@@ -10,7 +10,7 @@ import (
 	"github.com/pquerna/ffjson/ffjson"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/s0lesurviv0r/go-benchmarks/serde/models"
+	"github.com/jacobzelek/go-benchmarks/serde/models"
 )
 
 func getTestObject() models.Object {

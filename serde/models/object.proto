@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package models;
 
-option go_package = "github.com/s0lesurviv0r/go-benchmarks/serde/models";
+option go_package = "github.com/jacobzelek/go-benchmarks/serde/models";
 
 message ProtoNested {
   uint64 id = 1;

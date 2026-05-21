@@ -16,7 +16,7 @@ Tests the following external libraries:
 go test --bench=. -benchmem ./serde
 goos: darwin
 goarch: arm64
-pkg: github.com/s0lesurviv0r/go-benchmarks/serde
+pkg: github.com/jacobzelek/go-benchmarks/serde
 cpu: Apple M4 Max
 BenchmarkJsonMarshal-14              	 8938593	       119.1 ns/op	     112 B/op	       2 allocs/op
 BenchmarkJsonUnmarshal-14            	 6985383	       175.1 ns/op	     232 B/op	       5 allocs/op

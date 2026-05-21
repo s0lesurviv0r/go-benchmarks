@@ -22,7 +22,7 @@ Wherever possible, the number of shards for a map is set to 32.
 go test --bench=. ./concurrent-map
 goos: darwin
 goarch: arm64
-pkg: github.com/s0lesurviv0r/go-benchmarks/concurrent-map
+pkg: github.com/jacobzelek/go-benchmarks/concurrent-map
 cpu: Apple M4 Max
 BenchmarkUnshardedSingleMutex/Get-14            	10007247	       119.7 ns/op
 BenchmarkUnshardedSingleMutex/Set-14            	 4001626	       298.9 ns/op

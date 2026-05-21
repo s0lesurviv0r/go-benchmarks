@@ -1,4 +1,4 @@
-module github.com/s0lesurviv0r/go-benchmarks
+module github.com/jacobzelek/go-benchmarks
 
 go 1.24.0
 

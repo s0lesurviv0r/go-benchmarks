@@ -144,7 +144,7 @@ const file_object_proto_rawDesc = "" +
 	"\vProtoObject\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\x04R\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12+\n" +
-	"\x06nested\x18\x03 \x01(\v2\x13.models.ProtoNestedR\x06nestedB4Z2github.com/s0lesurviv0r/go-benchmarks/serde/modelsb\x06proto3"
+	"\x06nested\x18\x03 \x01(\v2\x13.models.ProtoNestedR\x06nestedB4Z2github.com/jacobzelek/go-benchmarks/serde/modelsb\x06proto3"
 
 var (
 	file_object_proto_rawDescOnce sync.Once

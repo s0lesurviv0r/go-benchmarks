@@ -12,7 +12,7 @@ Tests the following external libraries:
 go test --bench=. -benchmem ./on-disk-set
 goos: darwin
 goarch: arm64
-pkg: github.com/s0lesurviv0r/go-benchmarks/on-disk-set
+pkg: github.com/jacobzelek/go-benchmarks/on-disk-set
 cpu: Apple M4 Max
 BenchmarkInMemoryMap/Exists-14         	48155188	        24.85 ns/op	       0 B/op	       0 allocs/op
 BenchmarkInMemoryMap/Add-14            	15589772	       151.9 ns/op	      72 B/op	       0 allocs/op
